@@ -1,20 +1,28 @@
-#include<iostream>
-#include<set>
+#include <iostream>
+#include <set>
 
 using namespace std;
 
-int main(){
-    
-    set<int> table;
-    table.insert(table.begin(), 10);
-    table.insert(table.begin(), 20);
-    // cout<<table[0]<<endl;
-    // cout<<table[1]<<endl;
-    // cout<<*(table.begin())<<endl;
-    // cout<<*(table.begin()+1)<<endl;
+struct A
+{
+    int a=2;
+    int b=2;
+    char c='5';
+};
 
-    for (auto iter: table){
-        cout<<iter<<endl;
-    }
-    
+int main()
+{
+    A *temp = new A[10];
+    temp[0].a = 10;
+    temp[1].b = 11;
+    cout<<temp[0].a<<endl;
+    cout<<temp[1].b<<endl;
+    cout<<temp[3].c<<endl;
+    cout<<temp[110].c<<endl;
+
+    int a[10] = {0};
+    cout<<a[1]<<endl;
+    cout<<a[11]<<endl;
+
+    return 0;
 }

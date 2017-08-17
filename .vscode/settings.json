@@ -8,6 +8,7 @@
         "__tree": "cpp",
         "set": "cpp",
         "ostream": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "locale": "cpp"
     }
 }
